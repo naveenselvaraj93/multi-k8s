@@ -1,6 +1,6 @@
-docker build -t naveenselvaraj/mult-client:latest -t naveenselvaraj/multi-client:$SHA -f ./client/Dcokerfile ./client
-docker build -t naveenselvaraj/mult-server:latest -t naveenselvaraj/multi-server:$SHA -f ./server/Dcokerfile ./server
-docker build -t naveenselvaraj/multi-worker:latest -t naveenselvaraj/multi-worker:$SHA -f ./worker/Dcokerfile ./worker
+docker build -t naveenselvaraj/mult-client:latest -t naveenselvaraj/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t naveenselvaraj/mult-server:latest -t naveenselvaraj/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t naveenselvaraj/multi-worker:latest -t naveenselvaraj/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push naveenselvaraj/multi-client:latest
 docker push naveenselvaraj/multi-worker:latest
